@@ -26,6 +26,7 @@ environment {
                 sh '''
                 echo "We can write shell script here"
                 env
+                echo "$Greeting"
                 '''
             }
         }
