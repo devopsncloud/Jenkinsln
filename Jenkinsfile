@@ -72,7 +72,7 @@ environment {
         }
 
         success { 
-            echo 'The Job has ran successfully!'
+            echo 'The Job has ran  successfully!'
         }
 
         failure { 
