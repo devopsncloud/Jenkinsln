@@ -44,7 +44,7 @@ environment {
                 echo "We can write shell script here"
                 env
                 echo "$Greeting"
-                // sleep 10
+                #sleep 10
                 '''
             }
         }
