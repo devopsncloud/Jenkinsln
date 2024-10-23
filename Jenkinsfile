@@ -22,4 +22,17 @@ pipeline {
             }
         }
     }
+    post { 
+        always { 
+            echo 'I will always say Hello again!'
+        }
+
+        success { 
+            echo 'The Job has ran successfully!'
+        }
+
+        failure { 
+            echo 'Useful when alerts has to send upon failure'
+        }
+    }
 }
