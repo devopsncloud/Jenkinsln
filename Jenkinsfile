@@ -48,9 +48,8 @@ environment {
                 '''
             }
         }
-    }
 
-        stage('Checking Parameters usage'){
+        stage('Checking Parameters usage') {
             steps{
                  sh '''
                     echo "Hello ${params.PERSON}"
