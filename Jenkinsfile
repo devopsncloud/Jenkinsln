@@ -5,6 +5,11 @@ pipeline {
         
     }
 }
+
+environment { 
+        Greeting = 'Hellojenkins'
+    }
+
     stages {
         stage('Build') {
             steps {
@@ -18,7 +23,10 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo "Namaste"
+                sh '''
+                echo "We can write shell script here"
+                env
+                '''
             }
         }
     }
