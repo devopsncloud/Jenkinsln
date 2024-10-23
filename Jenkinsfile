@@ -51,7 +51,7 @@ environment {
 
         stage('Checking Parameters usage') {
             steps{
-                 sh '''
+                 sh """
                     echo "Hello ${params.PERSON}"
 
                     echo "Biography: ${params.BIOGRAPHY}"
@@ -62,7 +62,7 @@ environment {
 
                     echo "Password: ${params.PASSWORD}"
 
-        '''
+        """
     }
 }
     }
