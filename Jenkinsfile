@@ -10,6 +10,9 @@ environment {
         Greeting = 'Hellojenkins'
     }
 
+    options {
+                timeout(time: 1, unit: 'SECONDS') 
+
     stages {
         stage('Build') {
             steps {
@@ -27,6 +30,7 @@ environment {
                 echo "We can write shell script here"
                 env
                 echo "$Greeting"
+                sleep 10
                 '''
             }
         }
